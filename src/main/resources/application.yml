@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: eureka
+
+server:
+  port: 8585
+
+eureka:
+  instance:
+    hostname: ${host:localhost}
+    homePageUrl: http://localhost:8585/homepage
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+  server:
+    enableSelfPreservation: true
